@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+<body> 
+    <p>umiem takie potezne tabele zrobic se</p> 
+    <table> 
+        <tr> 
+            <td>komurka1</td> 
+            <td>komurka2</td> 
+            <td>komurka3</td> 
+        </tr> 
+        <tr> 
+            <td>komurka1</td> 
+            <td>komurka2</td> 
+            <td>komurka3</td> 
+        </tr> 
+        <tr> 
+            <td>komurka1</td> 
+            <td>komurka2</td> 
+            <td>komurka3</td> 
+        </tr> 
+        <tr> 
+            <td>&nbsp;</td> 
+            <td>komurka1</td> 
+            <td>komurka2</td> 
+        </tr> 
+    </table> 
+    <style> 
+        table, tr, td { 
+            margin: auto; 
+            margin-top:3em;
+            align-items: center; 
+            align-content: center; 
+            border: 1px solid black; 
+            padding: 3px; 
+        } 
+        p { 
+            margin-left: 825px; 
+            align-items: center; 
+            align-content: center; 
+        } 
+        #box1 {
+            position: absolute;
+            background-color:aqua;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            padding: 14px;
+            border: 2px solid black;
+            margin:50px;
+            margin-left:47%;
+            height:30px;
+            width: 120px;
+        }
+        #box2 {
+            background-color: blueviolet;
+            margin-left:45%;
+            position: relative;
+            border:1px solid black;
+            padding: 30px;
+            height:90px;
+            width:170px;
+        }
+        #box2:hover{
+            transition: 0.5s;
+            height: 120px;
+            width:200px;
+        }
+        #box2:not(:hover){
+            transition: 0.5s;
+            height: 90px;
+            width:170px;
+        }
+    </style> 
+
+    <p> Jeszcze jakies divy mozna zrobic;
+
+    </p> <div id="box2">
+        div tez tutaj jest<br>
+        rusza sie on!
+    <div id="box1">
+        to jest div
+    </div>
+</div>
+<br>
+<br>
+<form>
+    <fieldset>
+        <legend>Formularze również można robić</legend>
+        <label for="imie">Imie</label>
+        <input type="text" name="imie"><br>
+        <label for="numer">Numer Telefonu</label>
+        <input type="number" name="numer"><br>
+        <input type="submit" value="Wyslij">
+    </fieldset>
+</form>
+</body> 
+</html> 
